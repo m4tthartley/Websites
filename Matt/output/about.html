@@ -1,48 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-    <!--meta(name='description', content='description of your site')-->
-    <meta name="author" content="author of the site">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" user-scalable="no">
-    <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,300" rel="stylesheet">
-    <link href="http://fonts.googleapis.com/css?family=Raleway:700,400,300" rel="stylesheet">
-    <title>Matt's blog</title>
-    <meta name="description" content="Matt Hartley's personal blog website">
-    <link rel='stylesheet' href='/assets/master.css' />
-  </head>
-  <body>
-    <div class="container">
-      <div class="menu">
-        <p>
-          <a href="/" class="left">Blog</a>
-          <a href="/about.html" class="left">About</a>
-          <a href="http://github.com/m4tthartley" target="_blank">GitHub</a>
-          <a href="http://twitter.com/m4tt53" target="_blank">Twitter</a>
-        </p>
-      </div>
+<head>
+<title>(null)</title>
+<meta name="description" content="(null)">
+<style type="text/css">
+* {margin: 0px;padding: 0px;box-sizing: border-box;}
+body {background-color: #fff;font-family: georgia, "times new roman", times, serif;font-size: 120%;line-height: 1.5;color: #000;}
+h1, h2 {font-weight: normal;}
+h1 {margin-top: 50px;}
+h2 {margin-top: 30px;}
+p, li {margin-top: 20px;}
+p.author {color: #fff;background-color: #000;display: inline-block;padding: 5px;}
+p.tags {color: #999;}
+p.caption {margin-top: 0px;color: #999;}
+a {/* Color #3ae */color: #3ae;/*border-bottom: 3px solid #ccf;*/text-decoration: none;}
+a:hover {/*text-decoration: underline;*/color: #000;border-bottom: 3px solid #000;}
+h2 a {color: #000;}
+h2 a:hover {color: #3ae;text-decoration: none;border-bottom: 0;}
+img {width: 100%;margin-top: 20px;}
+.content {width: 740px;margin-left: auto;margin-right: auto;padding-left: 10px;padding-right: 10px;padding-bottom: 50px;}
+.menu {width: 740px;margin-left: auto;margin-right: auto;padding-left: 10px;padding-right: 10px;margin-top: 20px;display: table;}
+.menu a {border-bottom: 4px solid #fff;color: #3ae;}
+.menu a:hover {border-bottom: 4px solid #3ae;text-decoration: none;}
+.menu a.left {}
+.menu .menuBlog,.menu .menuAbout {float: left;margin-left: 0px;margin-right: 20px;}
+.menu .menuTwitter,.menu .menuGitHub {margin-left: 20px;float: right;}
+.post {display: table;margin-top: 40px;border-top: 2px solid #000;}
+.post img {width: 360px;float: right;margin-top: 10px;}
+.post .text {width: 360px;float: left;}
+.post .text p {margin-top: 10px;}
+.post .text h2 {margin-top: 10px;width: 300px;}
+.footer {margin-top: 80px;border-top: 1px solid #999;}
+.footer p {color: #999;}
+@media all and (max-width: 739px) {.content {width: 100%;padding-left: 20px;padding-right: 20px;}
+.post img,.post .text {width: 100%;}
+.post .text p {margin-top: 5px;}}
+@media all and (max-width: 720px) {.img-container {margin-left: -20px;margin-right: -20px;}}
+</style>
+</head>
+<body>
+<div class="menu">
+<a href="/" class="menuBlog">Blog</a> 
+<a href="/about.html" class="menuAbout">About</a> 
+<a href="http://github.com/m4tthartley" class="menuGitHub">GitHub</a> 
+<a href="http://twitter.com/m4tt53" class="menuTwitter">Twitter</a> 
+</div>
+<div class="content">
 
-      
 
 <h1>About</h1>
       <p>Hi, I'm Matt, a Gamer and Game developer living in rainy England.</p>
       <h2>Games</h2>
-      <p>My favourite game is The Elder Scrolls IV: Oblivion, but I enjoy A wide range of games.</p>
+      <p>My favourite game is <a href="https://en.wikipedia.org/wiki/The_Elder_Scrolls_IV:_Oblivion">The Elder Scrolls IV: Oblivion</a>, but I enjoy A wide range of games.</p>
       <h2>Game development</h2>
       <p>
-        I have used many different technologies in the past, including Java, Lua and Unity3D.
+        I have used many different technologies in the past, including Java, <a href="http://www.lua.org/">Lua</a> and <a href="https://unity3d.com/">Unity3D</a>.
         I could never quite find my home but about a year ago I discovered that I really like
-        programming in C/C++. And then Handmade Hero came along and I switched to C-style C++
-        for good.<br>Thank you Casey Muratori for teaching me to program again.
+        programming in C/C++. And then <a href="https://handmadehero.org/">Handmade Hero</a> came along and I switched to C-style C++
+        for good.<br>Thank you <a href="https://twitter.com/cmuratori">Casey Muratori</a> for teaching me to program again.
       </p>
       <P>
         At the moment I am working on a game in C/C++ using OpenGL for GPU rendering
-        and absolutly no libraries.
+        and no libraries except the <a href="https://github.com/nothings/stb">STB libraries</a> cause they're pretty awesome.
       </P>
       <p>Check out my games at <a target="_blank" href="http://giantjelly.net">giantjelly.net</a></p>
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:m4tthartley@gmail.com">m4tthartley@gmail.com</a><br>Twitter: <a href="http://twitter.com/m4tt53">@m4tt53</a></p>
-    </div>
-  </body>
+      <p>Email: <a href="mailto:m4tthartley@gmail.com">m4tthartley@gmail.com</a><br>Twitter: <a href="http://twitter.com/m4tt53">@m4tt53</a></p></div>
+</body>
 </html>
