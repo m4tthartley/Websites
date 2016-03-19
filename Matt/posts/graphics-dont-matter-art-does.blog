@@ -1,12 +1,12 @@
-title: Graphics don't matter, art does
 desc: Graphics don't matter, art does
 date: 12/4/2015
 
 [Graphics don't matter, art does]
-author: by Matt on 12 Apr 2015
+author: Matt
 
 // How to signify that this is the main image?
-image: /assets/posts/graphics-dont-matter-art-does.jpg
+// image: /assets/posts/graphics-dont-matter-art-does.jpg
+!image
 
 
 In games, when I think about the word graphics, I think about graphics quality, polygon count, texture size, etc. And to me this isn't that important. It's technically impressive and enjoyable at first but after a while it becomes just a gimmick.
@@ -40,5 +40,6 @@ Although it's important to keep pushing technology as far as it can go, I feel i
 
 Test paragraph, Aren't (https://en.wikipedia.org/wiki/The_Ink_Spots The Ink Spots) great!
 
-{blog}
+!blog
+
 {blogcompact}

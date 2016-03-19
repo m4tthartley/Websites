@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>(null)</title>
+<title>Blog</title>
 <meta name="description" content="(null)">
 <style type="text/css">
 * {margin: 0px;padding: 0px;box-sizing: border-box;}
@@ -12,7 +12,7 @@ h2 {margin-top: 30px;}
 p, li {margin-top: 20px;}
 p.author {color: #fff;background-color: #000;display: inline-block;padding: 5px;}
 p.tags {color: #999;}
-p.caption {margin-top: 0px;color: #999;}
+p.caption {margin-top: 0px;color: #999;font-size: 80%;}
 a {/* Color #3ae */color: #3ae;/*border-bottom: 3px solid #ccf;*/text-decoration: none;}
 a:hover {/*text-decoration: underline;*/color: #000;border-bottom: 3px solid #000;}
 h2 a {color: #000;}
@@ -25,16 +25,16 @@ img {width: 100%;margin-top: 20px;}
 .menu a.left {}
 .menu .menuBlog,.menu .menuAbout {float: left;margin-left: 0px;margin-right: 20px;}
 .menu .menuTwitter,.menu .menuGitHub {margin-left: 20px;float: right;}
-.post {display: table;margin-top: 40px;border-top: 2px solid #000;}
-.post img {width: 360px;float: right;margin-top: 10px;}
-.post .text {width: 360px;float: left;}
-.post .text p {margin-top: 10px;}
-.post .text h2 {margin-top: 10px;width: 300px;}
+.blog {display: table;margin-top: 40px;border-top: 2px solid #000;}
+.blog img {width: 360px;float: right;margin-top: 10px;}
+.blog .txt {width: 360px;float: left;}
+.blog .txt p {margin-top: 10px;}
+.blog .txt h2 {margin-top: 10px;width: 300px;}
 .footer {margin-top: 80px;border-top: 1px solid #999;}
 .footer p {color: #999;}
 @media all and (max-width: 739px) {.content {width: 100%;padding-left: 20px;padding-right: 20px;}
-.post img,.post .text {width: 100%;}
-.post .text p {margin-top: 5px;}}
+.blog img,.blog .txt {width: 100%;}
+.blog .txt p {margin-top: 5px;}}
 @media all and (max-width: 720px) {.img-container {margin-left: -20px;margin-right: -20px;}}
 /*.content {width: 100%;}
 .content p,.content img {width: 720px;display: block;margin-left: auto;margin-right: auto;}
@@ -50,72 +50,8 @@ img {width: 100%;margin-top: 20px;}
 </div>
 <div class="content">
 <h1>Blog</h1>
-<ul>
-	<!-- <div class="post">
-		<div class="text">
-			<h2><a href="/posts/graphics-dont-matter-art-does.html">Graphics don't matter, art does</a></h2>
-			<p>12 Apr 2015<br>Graphics don't matter, art does</p>
-			<p class="tags">tags: games, art</p>
-		</div>
-		<a href="/posts/graphics-dont-matter-art-does.html">
-			<img src="/img/graphics-dont-matter-art-does.jpg">
-		</a>
-	</div>
-	<div class="post">
-		<div class="text">
-			<h2><a href="/posts/the-last-of-us.html">The Last of Us</a></h2>
-			<p>04 Nov 2013<br>My thoughts on The Last of Us</p>
-			<p class="tags">tags: games</p>
-		</div>
-		<a href="/posts/the-last-of-us.html">
-			<img src="/img/the-last-of-us-large.jpg">
-		</a>
-	</div>
-	<div class="post">
-		<div class="text">
-			<h2><a href="/posts/state-of-decay.html">State of Decay</a></h2>
-			<p>21 Oct 2013<br>My thoughts on State of Decay</p>
-			<p class="tags">tags: games</p>
-		</div>
-		<a href="/posts/state-of-decay.html">
-			<img src="/img/state-of-decay-large.jpg">
-		</a>
-	</div> -->
-
-	
-		<div class="post">
-			<div class="text">
-				<h2><a href="/posts/graphics-dont-matter-art-does.html">Graphics don't matter, art does</a></h2>
-				<p>12 Apr 2015<br>Graphics don't matter, art does</p>
-				<!-- <p class="tags">tags: games, art</p> -->
-			</div>
-			<a href="/posts/graphics-dont-matter-art-does.html">
-				<img src="/assets/posts/graphics-dont-matter-art-does.jpg">
-			</a>
-		</div>
-	
-		<div class="post">
-			<div class="text">
-				<h2><a href="/posts/the-last-of-us.html">The Last of Us</a></h2>
-				<p>4 Nov 2013<br>My thoughts on The Last of Us</p>
-				<!-- <p class="tags">tags: games, art</p> -->
-			</div>
-			<a href="/posts/the-last-of-us.html">
-				<img src="/assets/posts/the-last-of-us.jpg">
-			</a>
-		</div>
-	
-		<div class="post">
-			<div class="text">
-				<h2><a href="/posts/state-of-decay.html">State of Decay</a></h2>
-				<p>21 Oct 2013<br>My thoughts on State of Decay</p>
-				<!-- <p class="tags">tags: games, art</p> -->
-			</div>
-			<a href="/posts/state-of-decay.html">
-				<img src="/assets/posts/state-of-decay.jpg">
-			</a>
-		</div>
-	
-</ul></div>
+<div class="blog">
+<div class="txt">
+<h2><a href="graphics-dont-matter-art-does">Graphics don't matter, art does</a></h2><p>12 Apr 2015<br>Graphics don't matter, art does</p></div><a href="graphics-dont-matter-art-does"><img src="/assets/posts/graphics-dont-matter-art-does.jpg"></a></div></div>
 </body>
 </html>

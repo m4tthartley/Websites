@@ -38,6 +38,7 @@ p.tags {
 p.caption {
 	margin-top: 0px;
 	color: #999;
+	font-size: 80%;
 }
 a {
 	/* Color #3ae */
@@ -103,24 +104,24 @@ img {
 	margin-left: 20px;
 	float: right;
 }
-.post {
+.blog {
 	display: table;
 	margin-top: 40px;
 	border-top: 2px solid #000;
 }
-.post img {
+.blog img {
 	width: 360px;
 	float: right;
 	margin-top: 10px;
 }
-.post .text {
+.blog .txt {
 	width: 360px;
 	float: left;
 }
-.post .text p {
+.blog .txt p {
 	margin-top: 10px;
 }
-.post .text h2 {
+.blog .txt h2 {
 	margin-top: 10px;
 	width: 300px;
 }
@@ -137,11 +138,11 @@ img {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
-	.post img,
-	.post .text {
+	.blog img,
+	.blog .txt {
 		width: 100%;
 	}
-	.post .text p {
+	.blog .txt p {
 		margin-top: 5px;
 	}
 }
