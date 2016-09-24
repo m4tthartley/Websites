@@ -8,37 +8,38 @@ body {
 	background-color: #fff;
 
 	font-family: georgia, "times new roman", times, serif;
-	font-size: 120%;
-	line-height: 1.5;
+	font-size: 0.9em;
+	line-height: 1.5em;
 	color: #000;
+
+	-webkit-font-smoothing: antialiased;
+
+	background-image: url(/assets/header.png);
+    background-repeat: repeat no-repeat;
+    background-position: 50% 0;
+    margin-top: 120px;
 }
 
 h1, h2 {
 	font-weight: normal;
 }
 
-h1 {
-	margin-top: 50px;
-}
-h2 {
-	margin-top: 30px;
-}
-p, li {
-	margin-top: 20px;
+h1, h2, p, li {
+	margin-top: 1.5em;
 }
 p.author {
 	color: #fff;
 	background-color: #000;
 	display: inline-block;
-	padding: 5px;
+	padding: 0.5em;
 }
 p.tags {
 	color: #999;
 }
 p.caption {
-	margin-top: 0px;
+	margin-top: 0em;
 	color: #999;
-	font-size: 80%;
+	/*font-size: 80%;*/
 }
 a {
 	/* Color #3ae */
@@ -60,9 +61,17 @@ h2 a:hover {
 	text-decoration: none;
 	border-bottom: 0;
 }
+
+h2.headertitle {
+	width: 720px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #fff;
+}
+
 img {
 	width: 100%;
-	margin-top: 20px;
+	margin-top: 1.5em;
 }
 .content {
 	width: 740px;
@@ -83,8 +92,11 @@ img {
 	display: table;
 }
 .menu a {
-	border-bottom: 4px solid #fff;
+	border-bottom: 4px solid transparent;
 	color: #3ae;
+
+	float: left;
+	margin-right: 20px;
 }
 .menu a:hover {
 	border-bottom: 4px solid #3ae;
@@ -93,7 +105,7 @@ img {
 .menu a.left {
 	
 }
-.menu .menuBlog,
+/*.menu .menuBlog,
 .menu .menuAbout {
 	float: left;
 	margin-left: 0px;
@@ -103,7 +115,7 @@ img {
 .menu .menuGitHub {
 	margin-left: 20px;
 	float: right;
-}
+}*/
 .blog {
 	display: table;
 	margin-top: 40px;
@@ -119,10 +131,10 @@ img {
 	float: left;
 }
 .blog .txt p {
-	margin-top: 10px;
+	/*margin-top: 0.5em;*/
 }
 .blog .txt h2 {
-	margin-top: 10px;
+	margin-top: 0.5em;
 	width: 300px;
 }
 .footer {
