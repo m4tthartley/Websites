@@ -1,0 +1,17 @@
+desc: My procedurally generated background for a space game
+date: 8/10/2016
+
+[Procedurally generated space background]
+author: Matt
+
+The game I'm currently working on is a 2D space game, and instead of having a static image for a background I wanted something procedurally generated that could change over time. A while ago I saw (https://www.twitch.tv/sssmcgrath Shawn McGrath) make a procedural background on stream using particles and Curl-Noise for a cool fluid motion. I really liked the result he got, so I decided to play around Curl-Noise myself.
+
+First step is create some particles and apply the Curl-Noise to their movement. To get a particles movement vector you use the particle's position in a noise function like Classic Perlin noise or Simplex noise, and then evaluate the partial derivatives. (https://www.cs.ubc.ca/~rbridson/docs/bridson-siggraph2007-curlnoise.pdf Read the paper) if you interested in the exact math.
+
+Here I'm using around 5000 particles created at random positions, they simulate for an amount of time and then are removed and recreated again at a different position. The colors just represent the direction that the particles are moving in.
+
+!video videos/space_background.mp4
+
+Next I made the particles bigger and fade out from the middle, and the colors slowly fade between red and blue. I also do a small fade when the particles are created and destroyed so it isn't jarring when they pop in and out. There's also some Cellular noise thrown into the mix here as I was playing around with it. That's what creates the solid lines of particles.
+
+!video videos/space_background3.mp4
