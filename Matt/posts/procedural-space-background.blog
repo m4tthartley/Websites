@@ -10,7 +10,7 @@ First step is create some particles and apply the Curl-Noise to their movement. 
 
 Here I'm using around 5000 particles created at random positions, they simulate for an amount of time and then are removed and recreated again at a different position. The colors just represent the direction that the particles are moving in.
 
-!video videos/space_background.mp4
+
 
 Next I made the particles bigger and fade out from the middle, and the colors slowly fade between red and blue. I also do a small fade when the particles are created and destroyed so it isn't jarring when they pop in and out. There's also some Cellular noise thrown into the mix here as I was playing around with it. That's what creates the solid lines of particles.
 
