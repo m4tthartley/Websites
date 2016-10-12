@@ -28,7 +28,7 @@ h1 {
 h1, h2, p, li {
 	margin-top: 1.5em;
 }
-p.author {
+.date {
 	color: #fff;
 	background-color: #000;
 	display: inline-block;

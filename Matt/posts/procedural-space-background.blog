@@ -16,7 +16,7 @@ Next I made the particles bigger and fade out from the middle, and the colors sl
 
 !video videos/space_background3.mp4
 
-After this I stopped clearing the screen each frame and instead ran a post-process shader that slowly clears a little bit off the color each frame to create a blur effect. Similar to the effect you can get from using the OpenGL accumulation buffer.
+After this I stopped clearing the screen each frame and instead ran a post-process shader that slowly clears a little bit of the color each frame to create a blur effect. Similar to the effect you can get from using the OpenGL accumulation buffer.
 
 !video videos/space_background4.mp4
 
@@ -24,15 +24,17 @@ I then played around with the blending mode until I got the effect I wanted, wit
 
 !video videos/space_background5.mp4
 
-I'm really liking the effects I've managed to get so far, even though they aren't that close to my goal yet. Next I decided to swap out the particles with some randomly shaped sprites.
+I'm really liking the effects I've managed to get so far, even though they aren't that close to my goal yet. Next I decided to swap out the particles with some wispy sprites of random shapes that I made in Photoshop.
+
+particles_blog.png
 
 !video videos/space_background6.mp4
 
-As you can see this is super awesome. Now I increase the size of the particle spawn area to fill the entire screen, because they are now more spread out there's less super bright areas which I would have had to fix by reducing the number of particles anyway. I also changed the colors around a bit to use green and blue instead of red and blue.
+As you can see this is super awesome. Now I increased the size of the particle spawn area to fill the entire screen. Because they are now more spread out there's less super bright areas which I would have had to fix by reducing the number of particles anyway. I also changed the colors around a bit to use green and blue instead of red and blue.
 
 !video videos/space_background7.mp4
 
-Finally I generated a fullscreen alpha mask using Perlin noise and animated it with the Z value. I think maybe the alpha mask animation is a bit too fast but I would tweak stuff like that once it's in the game.
+Finally I generated a fullscreen alpha mask using Perlin noise and animated it with the Z value. I also slowed down the animation quite a bit as it was only fast for testing, you want a game background to be subtle and not distracting. I think maybe the alpha mask animation is a bit too fast as well but I will tweak that a bit later.
 
 !video videos/space_background8.mp4
 
