@@ -4,9 +4,9 @@ date: 8/10/2016
 [Procedurally generated space background]
 author: Matt
 
-The game I'm currently working on is a 2D space game, and instead of having a static image for a background I wanted something procedurally generated that could change over time. A while ago I saw (https://www.twitch.tv/sssmcgrath Shawn McGrath) make a procedural background on stream using particles and Curl-Noise for a cool fluid motion. I really liked the result he got, so I decided to play around Curl-Noise myself.
+The game I'm currently working on is a 2D space game, and instead of having a static image for a background I wanted something procedurally generated that could change over time. A while ago I saw (https://www.twitch.tv/sssmcgrath Shawn McGrath) make a procedural background on stream using particles and Curl-Noise for some cool fluid motion. I really liked what he did, so I decided to play around Curl-Noise myself.
 
-First step is create some particles and apply the Curl-Noise to their movement. To get a particles movement vector you use the particle's position in a noise function like Classic Perlin noise or Simplex noise, and then evaluate the partial derivatives. (https://www.cs.ubc.ca/~rbridson/docs/bridson-siggraph2007-curlnoise.pdf Read the paper) if you're interested in the exact math.
+The first step is to create some particles and apply the Curl-Noise to their movement. To get a particle's movement vector you use the particle's position in a noise function like Classic Perlin noise or Simplex noise, and then evaluate the partial derivatives. (https://www.cs.ubc.ca/~rbridson/docs/bridson-siggraph2007-curlnoise.pdf Read the paper) if you're interested in the exact math.
 
 Here I'm using around 5000 particles created at random positions, they simulate for an amount of time and then are removed and recreated again at a different position. The colors just represent the direction that the particles are moving in.
 
@@ -38,6 +38,6 @@ Finally I generated a fullscreen alpha mask using Perlin noise and animated it w
 
 !video videos/space_background8.mp4
 
-I'm pretty happy with the results I got out of this. I'm not sure if I'll actually use this in the game as I have some other ideas for backgrounds as well. If I do it needs some more work and lot of optimization as it's super slow at the moment. Nevertheless I'm very happy with it.
+I'm pretty happy with the results I got out of this. I'm not sure if I'll actually use this in the game as I have some other ideas for backgrounds as well. If I do it needs some more work and a lot of optimization as it's super slow at the moment. Nevertheless I'm very happy with it.
 
-I really enjoyed the all procedural graphics work so I'll have to do some more things like this in the future. Maybe some demoscene-ish stuff synced to music or something.
+I really enjoyed all the procedural graphics work so I'll have to do some more things like this in the future. Maybe some demoscene-ish stuff synced to music or something.
